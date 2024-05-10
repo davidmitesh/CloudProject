@@ -1,0 +1,407 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "RekognitionLambdaS3TriggerStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "RekognitionLambdaS3TriggerStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "RekognitionLambdaS3TriggerStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "RekognitionLambdaS3TriggerStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/7737117cc4183417537ee922e8624d9af02295e98e1910148b930480f323b107.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "RekognitionLambdaS3TriggerStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "RekognitionLambdaS3TriggerStack.assets"
+      ],
+      "metadata": {
+        "/RekognitionLambdaS3TriggerStack/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Bucket83908E77"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketPolicyE9A3008A"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketAutoDeleteObjectsCustomResourceBAFD23C2"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Bucket/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotifications8F2E257D"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/Classifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Classifications0C921F6C"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/RekFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RekFunctionServiceRole3947AEF4"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/RekFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RekFunctionServiceRoleDefaultPolicyD393AA84"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/RekFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RekFunction9837D13D"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/RekFunction/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RekFunctionLogRetention7F1C9E70"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/RekFunction/SqsEventSource:RekognitionLambdaS3TriggerStackImgUploadQueue013AA608/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RekFunctionSqsEventSourceRekognitionLambdaS3TriggerStackImgUploadQueue013AA6089BB58F75"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/UploadImageToS3": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadImageToS3"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/DynamoDBTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBTable"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/LambdaFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaFunction"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/LambdaFunctionLogs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaFunctionLogs"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/serviceFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serviceFunctionServiceRole77C1C7AE"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/serviceFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serviceFunctionServiceRoleDefaultPolicy1960C355"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/serviceFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "serviceFunction935310CC"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPI120CAF85"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPICloudWatchRole82F12D6C"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIAccount5B8B2C0D"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIDeploymentC5C81B859f737fbe54a2b70972ebd80cb176f2a8"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIDeploymentStageprodC0DF38A5"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIEndpointD64DB231"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIOPTIONS9CB98D09"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimages7612E63A"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesOPTIONSF5131040"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/GET/ApiPermission.RekognitionLambdaS3TriggerStackimageAPI61222CA5.GET..images": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesGETApiPermissionRekognitionLambdaS3TriggerStackimageAPI61222CA5GETimagesB7B3585B"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/GET/ApiPermission.Test.RekognitionLambdaS3TriggerStackimageAPI61222CA5.GET..images": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesGETApiPermissionTestRekognitionLambdaS3TriggerStackimageAPI61222CA5GETimages79DA4956"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesGET5BB2A791"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/DELETE/ApiPermission.RekognitionLambdaS3TriggerStackimageAPI61222CA5.DELETE..images": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesDELETEApiPermissionRekognitionLambdaS3TriggerStackimageAPI61222CA5DELETEimagesCE2891AB"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/DELETE/ApiPermission.Test.RekognitionLambdaS3TriggerStackimageAPI61222CA5.DELETE..images": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesDELETEApiPermissionTestRekognitionLambdaS3TriggerStackimageAPI61222CA5DELETEimagesE71DF0F3"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/imageAPI/Default/images/DELETE/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "imageAPIimagesDELETE6CD934A8"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPool6BA7E5F2"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/UserPoolClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClient2F5918F7"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImageRekognitionIdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImageRekognitionIdentityPool"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/APIGatewayAuthorizer": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayAuthorizer"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImageRekognitionAuthenticatedRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImageRekognitionAuthenticatedRole6DF4FE58"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImageRekognitionAuthenticatedRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImageRekognitionAuthenticatedRoleDefaultPolicy2D289455"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IdentityPoolRoleAttachment"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/AppClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppClientId"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/IdentityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IdentityPoolId"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadDeadLetterQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadDeadLetterQueue7F296786"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadQueue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadQueueB46CB7A8"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadQueue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadQueuePolicyAAA704B0"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadQueue/RekognitionLambdaS3TriggerStackImgUploadTopicFB494C5D/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadQueueRekognitionLambdaS3TriggerStackImgUploadTopicFB494C5D19256102"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadTopic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadTopic3B638E2B"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/ImgUploadTopic/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ImgUploadTopicPolicy246E92AE"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/RekognitionLambdaS3TriggerStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "RekognitionLambdaS3TriggerStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
